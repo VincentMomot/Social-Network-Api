@@ -16,11 +16,11 @@ const userSchema = new Schema({
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
   },
   thoughts: [{
-    type: mongoose.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Thoughts'
   }],
   friends: [{
-    type: mongoose.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'Users'
   }],
  
@@ -37,7 +37,6 @@ userSchema.virtual('friendCount')
     return this.friends.length;
   })
 
-// Uses mongoose.model() to create model
 const Users = model('Users', userSchema);
 
 module.exports = Users;
