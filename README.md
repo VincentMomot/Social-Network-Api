@@ -1,15 +1,15 @@
-# Vince's-e-commerce-backend
-Use this program to help manage your online business
+# Vince's-Social-Media-Api
+Use this program to help manage your social media site
 
 ### Program Features:
-1) Creating, deleting, viewing, and updating new products, tags and categories for the e-commerce site
+1) Creating, deleting, viewing, and updating users, thoughts and reactions for the social media site
 
 
 ### What I learned from the creation of this program:
-* How to use sequalize get/post/pull and delete requests
-* How to interface between insomnia and the terminal
-* How to seed a database with js files
-* Create models with sequalize
+* How to use mongoose get/post/pull and delete requests
+* How to create routes with mongoose
+* How to create controllers with mongoose
+* Hpw to create models with mongoose
 
 [This is a link to the video walkthrough](https://youtu.be/XZyoF8UOiQ8)
 
