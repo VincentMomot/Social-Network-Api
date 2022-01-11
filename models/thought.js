@@ -17,12 +17,12 @@ const thoughtSchema = new Schema(
     reactions: [
       reactionSchema
     ],
-    createdAt: {
+    createdAt:{
       type: Date,
       default: Date.now,
       get: (createdAtVal) =>
-      moment(createdAtVal).format("MMM DD, YYYY [at] hh:mm a"),
-    },
+          moment(createdAtVal).format("MMM DD, YYYY [at] hh:mm a"),
+      },
   },
   {
     toJSON: {
